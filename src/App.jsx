@@ -11,7 +11,7 @@ function App() {
     <div className="d-flex justify-content-center">
      {
       playlists.map(
-        (playlist) => <Card img={playlist.img} title={playlist.title} text={playlist.text} />
+        (playlist) => <Card img={playlist.img} title={playlist.title} text={playlist.text} key={playlist.id} />
       )
      } 
     </div>
